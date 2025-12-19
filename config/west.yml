@@ -7,7 +7,8 @@ manifest:
   projects:
     - name: zmk
       remote: badhi
-      revision: main  # PMW3610 트랙볼 드라이버와 pointing 기능이 포함된 브랜치
+      repo: zmk-pmw3610-driver  # 실제 저장소 이름을 정확히 지정해야 합니다.
+      revision: main
       import: app/west.yml
   self:
     path: config

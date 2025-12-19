@@ -1,11 +1,13 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/Amos698
+      url-base: https://github.com/zmkfirmware
+    - name: badhi
+      url-base: https://github.com/badhi
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: feature-test
+      remote: badhi
+      revision: main  # PMW3610 트랙볼 드라이버와 pointing 기능이 포함된 브랜치
       import: app/west.yml
   self:
     path: config
